@@ -1,5 +1,5 @@
 body {
-    background-color: #9b59b6;
+    background: linear-gradient(to right, #ffd65e 0%,#ff9f05 100%);;
     font-family: 'Source Serif Pro', serif;
     text-align: center;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 
 footer {
     margin: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h1 {
@@ -35,7 +35,7 @@ img {
 }
 
 .comment {
-    border: 2px solid #8e44ad;
+    border: 2px solid #e67e22;
     border-radius: 7px;
     max-width: 60%;
     min-width: 15rem;
@@ -44,13 +44,13 @@ img {
 
 .back {
     display: block;
-    margin: 1em;
-    background-color: #8e44ad;
+    margin: 2em;
+    background-color: #e67e22;
     color: white;
     border: 0;
     border-radius: 3px;
-    padding: 5px;
-    font-size: 1em;
+    padding: 1em;
+    font-size: 0.7em;
 }
 
 .back a,
@@ -63,16 +63,16 @@ img {
 
 button {
     margin: 1em;
-    background-color: #8e44ad;
+    background-color: #e67e22;
     color: white;
     border: 0;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 1em;
     padding: 1em;
 }
 
 form {
-    border: 1px solid #333;
+    border: 1px solid #e67e22;
     border-radius: 5px;
     max-width: 60%;
     margin: 2rem auto;
@@ -93,7 +93,7 @@ label {
 input, textarea {
     width: 80%;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 1px solid #e67e22;
     min-height: 2rem;
     font-size: 1.2rem;
 }
@@ -104,6 +104,6 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #000;
+    border-color: #e67e22;
 }
   

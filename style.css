@@ -1,5 +1,5 @@
 body {
-    background-color: #9b59b6;
+    background: linear-gradient(to right, #ffd65e 0%,#ff9f05 100%);
     font-family: 'Source Serif Pro', serif;
     text-align: center;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 
 footer {
     margin: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 main {
