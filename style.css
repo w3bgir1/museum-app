@@ -1,3 +1,24 @@
 body {
     background-color: rgb(181, 228, 255);
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+  }
+
+main img {
+    height: 200px;
+}
+
+h1 {
+    margin: 3rem 1rem 6rem 1rem;
 }
