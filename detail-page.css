@@ -1,0 +1,109 @@
+body {
+    background-color: #9b59b6;
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    color: #1e272e;
+}
+
+footer {
+    margin: 3rem;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin: 5rem 1rem;
+}
+
+h2 {
+    margin: 2rem auto;
+}
+
+main {
+    background: whitesmoke;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+  }
+
+img {
+    width: 50%;
+    min-width: 15rem;
+}
+
+.comment {
+    border: 2px solid #8e44ad;
+    border-radius: 7px;
+    max-width: 60%;
+    min-width: 15rem;
+    margin: 1rem auto;
+}
+
+.back {
+    display: block;
+    margin: 1em;
+    background-color: #8e44ad;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.back a,
+.back a:active,
+.back a:hover,
+.back a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    margin: 1em;
+    background-color: #8e44ad;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 1em;
+}
+
+form {
+    border: 1px solid #333;
+    border-radius: 5px;
+    max-width: 60%;
+    margin: 2rem auto;
+    min-width: 15rem;
+    padding: 1rem;
+}
+
+.formSection {
+    margin-top: 1rem;
+    margin-bottom: 2rem
+}
+  
+label {
+    display: inline-block;
+    width: 80%;
+}
+  
+input, textarea {
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    min-height: 2rem;
+    font-size: 1.2rem;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 5rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+  
