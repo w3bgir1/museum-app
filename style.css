@@ -7,6 +7,11 @@ body {
     width: 100%;
 }
 
+footer {
+    margin: 3rem;
+    font-size: 1.2rem;
+}
+
 main {
     background: white;
     width: 90%;
@@ -15,10 +20,23 @@ main {
     padding: 2rem 0;
   }
 
-main img {
-    height: 200px;
-}
-
 h1 {
     margin: 3rem 1rem 6rem 1rem;
+}
+
+h2 {
+    margin: auto 2rem;
+}
+
+.artObject {
+    max-width: 80%;
+    max-height: 20rem;
+    margin: 1rem;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
