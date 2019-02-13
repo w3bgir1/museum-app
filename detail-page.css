@@ -51,6 +51,7 @@ img {
     border-radius: 3px;
     padding: 1em;
     font-size: 0.7em;
+    outline: none;
 }
 
 .back a,
@@ -69,6 +70,7 @@ button {
     border-radius: 7px;
     font-size: 1em;
     padding: 1em;
+    outline: none;
 }
 
 form {
@@ -82,9 +84,9 @@ form {
 
 .formSection {
     margin-top: 1rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    outline: none;
 }
-  
 label {
     display: inline-block;
     width: 80%;
@@ -96,6 +98,7 @@ input, textarea {
     border: 1px solid #e67e22;
     min-height: 2rem;
     font-size: 1.2rem;
+    outline: none;
 }
   
 textarea {
