@@ -22,7 +22,8 @@ const doesNotPassAllValidations = (name, msg) => {
       return true;
     } 
     const hasBadWords = words.filter(el => {
-    if (badWordsArr.includes(el)) {
+        const newEl = el.toLowerCase();
+    if (badWordsArr.includes(newEl)) {
         return el;
      }
   });
