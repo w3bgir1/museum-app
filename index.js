@@ -335,11 +335,13 @@ paintings.forEach(el => {
     if (el.webImage.width > 500 && !el.principalOrFirstMaker.includes('Honthorst') && year < 1800) {
 
         const markup = `
-        <a href="./pages/detail-page.html">
-            <img src='${el.webImage.url}' class="artObject" alt='${el.title}'  >
+        <a href="./pages/detail-page.html?id=${el.id}">
+            <img src='${el.webImage.url}' class="artObject" alt='${el.title}'>
         </a>
     `
          document.getElementById('gallery').insertAdjacentHTML("beforeend", markup);
+
+         
     }
     
 })
