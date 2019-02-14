@@ -366,8 +366,21 @@ const doesNotPassAllValidations = (name, msg) => {
   
 } 
 
-  
-  
+
+  if (localStorage.length > 0) {
+    for (let i = 0; i < localStorage.length; i++) {
+      let nameLS = localStorage.getItem(i);
+      let msgLS = localStorage.getItem(i + 1);
+      const markupL = `
+      <section class="comment">
+        <h3>${nameLS} said:</h3>
+        <p>"${msgLS}"</p>
+      </section>
+      `
+      document.getElementById('comments').insertAdjacentHTML("beforeend", markupL);
+      i++;
+    }
+  }
 
 const submitComment = () => {
 
@@ -397,6 +410,9 @@ const submitComment = () => {
     const commentSection = document.getElementById('comments');
     commentSection.appendChild(comment);
 
+    localStorage.setItem(localStorage.length, newName);
+    localStorage.setItem((localStorage.length), msg);
+
     inputField.value = null;
     textArea.value = null;
 
@@ -410,6 +426,7 @@ const id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
 paintings.forEach(el=> {
 
     if (id === el.id) {
+      document.title = `${el.title}`;
       const markupD = `
           <p>Sasha's Mobile Museum App</p>
           <h1>${el.title}</h1>
