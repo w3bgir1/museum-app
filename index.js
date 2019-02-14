@@ -326,7 +326,6 @@ const data = {
 
 
 const paintings = data.artObjects;
-console.log(paintings);
 
 paintings.forEach(el => {
 
