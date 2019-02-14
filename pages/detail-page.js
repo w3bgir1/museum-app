@@ -331,6 +331,8 @@ const badWordStr = `2 girls 1 cup, 2g1c, 4r5e, 5h1t, 5hit, a$$, a$$hole, a_s_s, 
 
 
 const badWordsArr = badWordStr.trim().split(',').join(' ');
+const baseUrl = (window.location).href; 
+const id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
 
 const doesNotPassAllValidations = (name, msg) => {
     const words = msg.split(' ');
@@ -369,16 +371,20 @@ const doesNotPassAllValidations = (name, msg) => {
 
   if (localStorage.length > 0) {
     for (let i = 0; i < localStorage.length; i++) {
-      let nameLS = localStorage.getItem(i);
-      let msgLS = localStorage.getItem(i + 1);
+      let item = localStorage.getItem(i);
+      item = JSON.parse(item);
+
+      if (item.id !== id) {
+        continue;
+      }
+
       const markupL = `
       <section class="comment">
-        <h3>${nameLS} said:</h3>
-        <p>"${msgLS}"</p>
+        <h3>${item.name} said:</h3>
+        <p>"${item.msg}"</p>
       </section>
       `
       document.getElementById('comments').insertAdjacentHTML("beforeend", markupL);
-      i++;
     }
   }
 
@@ -410,18 +416,20 @@ const submitComment = () => {
     const commentSection = document.getElementById('comments');
     commentSection.appendChild(comment);
 
-    localStorage.setItem(localStorage.length, newName);
-    localStorage.setItem((localStorage.length), msg);
+    localStorage.setItem(
+      localStorage.length, 
+      JSON.stringify({
+        name: newName,
+        msg: msg,
+        id: id
+      })
+    );
 
     inputField.value = null;
     textArea.value = null;
 
 }
 
-
-
-const baseUrl = (window.location).href; 
-const id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
 
 paintings.forEach(el=> {
 
